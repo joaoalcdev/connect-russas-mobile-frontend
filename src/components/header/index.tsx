@@ -1,7 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { styled } from "nativewind";
 
-
 import { FontAwesome } from '@expo/vector-icons';
 
 const StyledView = styled(View);
