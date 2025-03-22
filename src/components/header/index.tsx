@@ -15,7 +15,7 @@ export function Header() {
             style={{ width: 100, height: 40 }} // Ajuste conforme necessário
             resizeMode="contain" 
             />
-      </View>
+        </View>
 
         {/* Ícone do WhatsApp */}
         <Pressable>
