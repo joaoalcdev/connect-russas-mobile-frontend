@@ -47,7 +47,7 @@ export default function Index() {
         {/*caso não tenha conta - criar conta*/}
         <View className="flex-row justify-center mt-6">
           <Text className="text-[18px] text-[#111111] font-bold">Não tem conta? </Text>
-          <Pressable onPress={() => console.log("Criar conta pressionado")}>
+          <Pressable onPress={() => router.push('../cadastro')}>
             <Text className="text-[18px] font-semibold text-[#00358C]">Criar conta</Text>
           </Pressable>
         </View>

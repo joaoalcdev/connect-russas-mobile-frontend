@@ -1,7 +1,10 @@
-import { View, Text, TextInput, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ScrollView, Image, Pressable } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 
 export default function Cadastro() {
+  const router = useRouter();
+
   return (
     <ScrollView className="flex-1 bg-gray-100 p-4">
       <View className="items-center mb-4">
@@ -28,9 +31,9 @@ export default function Cadastro() {
 
         <View className="flex-row justify-center mt-4">
           <Text className="text-gray-600">Já tem conta?</Text>
-          <TouchableOpacity>
+          <Pressable onPress={() => router.push('../')}>
             <Text className="text-blue-600 ml-1">Entrar</Text>
-          </TouchableOpacity>
+          </Pressable>
         </View>
 
         {/* Linha Divisória */}
